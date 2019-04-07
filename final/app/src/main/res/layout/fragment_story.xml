@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/pvStoryPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:use_controller="false"
+        app:shutter_background_color="@color/background"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvUserImageContainer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="25dp"
+        android:elevation="3dp"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="@color/white"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgWSUserPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/cvUserImageContainer"
+        app:layout_constraintTop_toTopOf="@id/cvUserImageContainer"
+        app:layout_constraintBottom_toBottomOf="@id/cvUserImageContainer"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        tools:text="username"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/llPreviousStory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            />
+        <LinearLayout
+            android:id="@+id/llPause"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            />
+        <LinearLayout
+            android:id="@+id/llNextStory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbWatchStory"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/llProgressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivCancelStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/close"
+        android:padding="15dp"
+        android:tint="@color/white"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

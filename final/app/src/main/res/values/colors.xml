@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="cyan">#01f6ff</color>
+    <color name="black_alpha_35">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_alpha_50">#50FFFFFF</color>
+    <color name="sun_flower_yellow">#ffd000</color>
+    <color name="background">#1c1f25</color>
+    <color name="lighter_green">#84ff58</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="snack_bar_background_color_red">#B5121C</color>
+    <color name="dark_85">#d91c1f25</color>
+    <color name="text_black">#1c1f25</color>
+    <color name="cyan_alpha_50">#5001f6ff</color>
+</resources>
